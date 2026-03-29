@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from 'next/link';
 
 import FadeUp from '@/components/FadeUp';
@@ -41,20 +42,20 @@ export default function AboutPage() {
   return (
     <>
       <Head>
-        <title>O nás – Název Firmy</title>
+        <title>Studio – Accent Recording Studio</title>
         <meta
           name="description"
-          content="Seznamte se s naší společností, našimi prostory a týmem odborníků."
+          content="Prohlédněte si prostory a vybavení nahrávacího studia Accent v Plzni."
         />
       </Head>
 
       <PageHero
         title={
           <>
-            Kdo <span className="text-[#f0c040]">Jsme</span>
+            Naše <span className="text-[#f0c040]">Studio</span>
           </>
         }
-        description="Představení našich hodnot, vize a prostor, ve kterých pro vás vytváříme ty nejlepší výsledky."
+        description="Profesionálně vybavené prostory v srdci Plzně — pro nahrávání, mixáž i masterování."
       />
 
       {/* Sekce A */}
@@ -62,30 +63,35 @@ export default function AboutPage() {
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <div className="grid grid-cols-1 items-center gap-16 md:grid-cols-2">
             <FadeUp>
-              <div className="flex aspect-[4/3] w-full items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-[#444450]">
-                <span className="text-xl">Obrázek pracoviště A</span>
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/studio/control_room.jpg"
+                  alt="Řídicí místnost studia Accent"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </FadeUp>
             <FadeUp delay={0.1}>
-              {badge('Naše zázemí')}
-              <h2 className="h2-section mb-2 text-white">Moderní pracoviště A</h2>
+              {badge('Řídicí místnost')}
+              <h2 className="h2-section mb-2 text-white">Řídicí místnost</h2>
               {accentLine}
               <p className="mt-5 leading-relaxed text-[#8888a0]">
-                Zde popište hlavní pracovní prostory vaší firmy. Jak jsou vybaveny, jakou mají
-                atmosféru a proč jsou ideální pro dosahování špičkových výsledků. Tento prostor by
-                měl odrážet profesionalitu a kvalitu vaší práce.
+                Srdce studia — akusticky vyladěná řídicí místnost s referenčními monitory KRK Rokit,
+                analogovým mixpultem a rozsáhlou rackovou technikou. Poskytuje přesné referenční
+                prostředí pro spolehlivý mix a mastering.
               </p>
               <p className="mt-3 leading-relaxed text-[#8888a0]">
-                Můžete uvést konkrétní technologie nebo metodiky, které v těchto prostorách
-                využíváte k naplnění potřeb vašich klientů.
+                Propojení analogového a digitálního světa zaručuje teplý, přirozený zvuk s moderní
+                přesností zpracování.
               </p>
               <SpecTable
                 rows={[
-                  ['Hlavní vybavení', 'Specifikace vybavení A'],
-                  ['Technologie', 'Moderní technologický stack'],
-                  ['Kapacita', 'Možnosti odbavení projektů'],
-                  ['Standardy', 'Vysoká úroveň kvality / ISO'],
-                  ['Dostupnost', 'Podle dohody / Non-stop'],
+                  ['Referenční monitory', 'KRK Rokit (žluté kužely)'],
+                  ['Konverze', 'High-end AD/DA konvertory'],
+                  ['Hardware rack', 'Kompresory, EQ, preamps'],
+                  ['DAW', 'Pro Tools / Logic Pro'],
+                  ['Kapacita', '2–4 osoby + zvukař'],
                 ]}
               />
             </FadeUp>
@@ -98,31 +104,36 @@ export default function AboutPage() {
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <div className="grid grid-cols-1 items-center gap-16 md:grid-cols-2">
             <FadeUp>
-              {badge('Specializované prostory')}
-              <h2 className="h2-section mb-2 text-white">Zázemí pro detaily B</h2>
+              {badge('Nahrávací kabina')}
+              <h2 className="h2-section mb-2 text-white">Nahrávací kabina</h2>
               {accentLine}
               <p className="mt-5 leading-relaxed text-[#8888a0]">
-                Popis vedlejšího nebo specializovaného pracoviště. Vysvětlete, k čemu konkrétně
-                slouží a jak doplňuje vaši celkovou nabídku. Zaměřte se na detaily, které vás
-                odlišují od konkurence.
+                Zvukotěsná kabina s proměnnou akustikou — ideální pro zpěv, mluvené slovo, akustické
+                nástroje i elektrické kytary. Přes skleněné okno zachovává vizuální kontakt s řídicí
+                místností.
               </p>
               <p className="mt-3 leading-relaxed text-[#8888a0]">
-                Zdůrazněte klid pro práci, špičkovou ergonomii nebo unikátní vlastnosti tohoto
-                konkrétního místa.
+                Vybavena kondenzátorovými i dynamickými mikrofony přední kvality, rampou na
+                nástrojové stojany a pohodlným prostorem pro klid při nahrávání.
               </p>
               <SpecTable
                 rows={[
-                  ['Parametr 1', 'Popis hodnoty 1'],
-                  ['Parametr 2', 'Popis hodnoty 2'],
-                  ['Monitorování', 'Kontrolní mechanismy'],
-                  ['Prostředí', 'Optimalizované pro výkon'],
-                  ['Tým', 'Specialisté v dané oblasti'],
+                  ['Mikrofony', 'Neumann, AKG, Shure'],
+                  ['Preamp', 'API, neve-style preamp'],
+                  ['Monitorování', 'Uzavřená sluchátka AKG K271'],
+                  ['Akustika', 'Proměnlivé akustické panely'],
+                  ['Kapacita', '1–3 interpreti'],
                 ]}
               />
             </FadeUp>
             <FadeUp delay={0.1}>
-              <div className="flex aspect-[4/3] w-full items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-[#444450]">
-                <span className="text-xl">Obrázek zázemí B</span>
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/studio/vocal_booth.jpg"
+                  alt="Nahrávací kabina studia Accent"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </FadeUp>
           </div>
@@ -134,22 +145,34 @@ export default function AboutPage() {
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <FadeUp className="mb-10 text-center">
             <span className="mb-4 inline-block rounded-full border border-[rgba(212,160,23,0.35)] bg-[rgba(212,160,23,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#f0c040] uppercase">
-              Galerie
+              Fotogalerie
             </span>
-            <h2 className="h2-section mb-2 text-white">Naše firma v obrazech</h2>
+            <h2 className="h2-section mb-2 text-white">Studio v obrazech</h2>
             <span className="mx-auto mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#d4a017] to-[#f0c040]" />
             <p className="mt-4 text-[#8888a0]">
-              Nahlédněte do našeho prostředí a podívejte se, jak pracujeme.
+              Nahlédněte do prostor, kde vznikají profesionální nahrávky.
             </p>
           </FadeUp>
           <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+            {[
+              { src: '/images/studio/main_studio.jpg', alt: 'Hlavní nahrávací prostor' },
+              { src: '/images/studio/equipment_rack.jpg', alt: 'Vybavení studia' },
+              { src: '/images/studio/microphones.jpg', alt: 'Mikrofonní park' },
+              { src: '/images/studio/drums.jpg', alt: 'Natažené bicí' },
+              { src: '/images/studio/control_room.jpg', alt: 'Pohled na mixpult' },
+              { src: '/images/studio/vocal_booth.jpg', alt: 'Kabina pro zpěv' },
+            ].map((img, i) => (
               <FadeUp
-                key={i}
+                key={img.src}
                 delay={i * 0.05}
               >
-                <div className="group relative flex aspect-[4/3] cursor-pointer items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-white/5 text-[#444450]">
-                  <span className="text-sm">Placeholder {i}</span>
+                <div className="group relative aspect-[4/3] cursor-pointer overflow-hidden rounded-xl border border-white/10 bg-white/5">
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <span className="text-2xl text-white">🔍</span>
                   </div>
@@ -164,22 +187,22 @@ export default function AboutPage() {
       <section className="w-full border-t border-white/10 bg-[#111118] py-24">
         <div className="mx-auto w-[90vw] max-w-[650px] text-center">
           <FadeUp>
-            <h2 className="h2-section mb-3 text-white">Chcete se k nám přidat?</h2>
+            <h2 className="h2-section mb-3 text-white">Chcete nahrávat u nás?</h2>
             <p className="mb-8 text-[#8888a0]">
-              Máte zájem o naše služby nebo s námi chcete spolupracovat? Ozvěte se nám.
+              Kontaktujte nás a domluvte si prohlídku nebo rovnou zarezervujte nahrávací čas.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/contact"
                 className={btnPrimary}
               >
-                ✉️ Kontaktovat nás
+                <span>📞</span> Kontaktovat studio
               </Link>
               <Link
                 href="/sluzby"
                 className={btnOutline}
               >
-                📋 Naše služby
+                <span>💰</span> Zobrazit ceník
               </Link>
             </div>
           </FadeUp>

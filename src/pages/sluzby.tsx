@@ -11,75 +11,75 @@ const btnOutline =
 
 const serviceCards = [
   {
-    icon: '🚀',
-    title: 'Služba A',
-    desc: 'Komplexní řešení v oblasti A, které vám pomůže dosáhnout vašich cílů efektivně.',
+    icon: '🎙',
+    title: 'Nahrávání',
+    desc: 'Profesionální záznamy zpěvu, nástrojů i mluveného slova v akusticky ošetřeném prostoru.',
     items: [
-      'Položka služby A1',
-      'Položka služby A2',
-      'Položka služby A3',
-      'Odborná konzultace',
-      'Pravidelná údržba',
+      'Zpěv & vokály',
+      'Akustické nástroje',
+      'Elektrické nástroje (DI / amp)',
+      'Mluvené slovo, dabing',
+      'Live nahrávání skupin',
     ],
   },
   {
-    icon: '⚡',
-    title: 'Služba B',
-    desc: 'Rychlá a spolehlivá realizace vašich požadavků s důrazem na kvalitu a detail.',
+    icon: '🎚',
+    title: 'Mix & Mastering',
+    desc: 'Vybalancování stop do koherentního mixu a finální mastering pro distribuci.',
     items: [
-      'Položka služby B1',
-      'Položka služby B2',
-      'Optimalizace procesů',
-      'Analýza dat',
-      'Support 24/7',
+      'Stereo & stem mastering',
+      'Příprava pro streaming (Spotify, Apple Music)',
+      'Příprava pro CD / vinyl',
+      'Mix pro TV a reklamu',
+      'Loudness normalizace',
     ],
   },
   {
-    icon: '📊',
-    title: 'Analýza & Strategia',
-    desc: 'Hloubkové prověření vašich potřeb a návrh optimální strategie pro váš úspěch.',
+    icon: '🎬',
+    title: 'Dabing & Post-produkce',
+    desc: 'Profesionální dabing filmů, seriálů, dokumentů a komerčních spotů.',
     items: [
-      'Úvodní audit',
-      'Nastavení KPI',
-      'Příprava roadmapy',
-      'Risk management',
-      'Měsíční reporty',
+      'Dabované překlady',
+      'Voice-over pro reklamy',
+      'Audio post-produkce videa',
+      'Sound design',
+      'Foley efekty',
     ],
   },
   {
-    icon: '🛡️',
-    title: 'Bezpečnost & Správa',
-    desc: 'Zajištění maximální bezpečnosti a správy vašich aktiv nebo systémů.',
+    icon: '🎼',
+    title: 'Kompozice & Aranžmá',
+    desc: 'Tvorba originální hudby a aranžování pro nejrůznější obsazení.',
     items: [
-      'Pravidelné kontroly',
-      'Zálohování dat',
-      'Školení týmu',
-      'Aktualizace systémů',
-      'Krizový plán',
+      'Hudba na zakázku pro reklamy',
+      'Aranžmá pro kapelu / orchestr',
+      'MIDI produkce & beat making',
+      'Průvodní texty a melodie',
+      'Partitury a noty',
     ],
   },
   {
-    icon: '💡',
-    title: 'Kreativa & Inovace',
-    desc: 'Moderní přístup k řešení problémů a hledání nových příležitostí pro váš růst.',
+    icon: '🎤',
+    title: 'Karaoke Produkce',
+    desc: 'Specializovaná výroba karaoke stop v profesionální kvalitě.',
     items: [
-      'Workshop inovací',
-      'Brainstorming',
-      'Prototypování',
-      'User experience',
-      'Design thinking',
+      'CDG karaoke formát',
+      'MP4 karaoke video',
+      'Přesný přepis textu & timing',
+      'Česky & slovensky',
+      'Online prodej na karaokesong.eu',
     ],
   },
   {
-    icon: '🤝',
-    title: 'Klientská Podpora',
-    desc: 'Osobní přístup a neustálá dostupnost pro řešení jakýchkoliv dotazů.',
+    icon: '🎸',
+    title: 'Umělecká Agentura',
+    desc: 'Zastupujeme kapely a zajišťujeme komplexní servis pro akce.',
     items: [
-      'Přiřazený account manager',
-      'Pravidelné schůzky',
-      'Odborné poradenství',
-      'VIP servis',
-      'Feedback loop',
+      'ABBA Star (pop tribute show)',
+      'Sifon Original (legendární rocková kapela)',
+      'Queenways (Queen tribute)',
+      'Electric Therapy',
+      'Ozvučení & osvětlení akcí',
     ],
   },
 ];
@@ -87,48 +87,48 @@ const serviceCards = [
 const pricingCards = [
   {
     badge: 'Základní',
-    title: 'Balíček Start',
+    title: 'Nahrávání / hodina',
     price: 'na dotaz',
-    unit: 'Vhodné pro jednotlivce',
+    unit: 'Cena dle rozsahu projektu',
     features: [
-      'Přístup k základním funkcím',
-      'E-mailová podpora',
-      'Základní analýza',
-      'Měsíční výstupy',
+      'Přístup do nahrávací kabiny',
+      'Obsluha zvukaře',
+      'Základní editace stop',
+      'Soubory ve WAV / MP3',
     ],
     featured: false,
-    cta: { label: 'Poptat Start', className: btnOutline, href: '/contact' },
+    cta: { label: 'Nezávazná poptávka', className: btnOutline, href: '/contact' },
   },
   {
     badge: 'Populární',
-    title: 'Balíček Pro',
+    title: 'Demo Balíček',
     price: 'na dotaz',
-    unit: 'Ideální pro firmy',
+    unit: 'Pro začínající umělce',
     features: [
-      'Vše z balíčku Start',
-      'Prioritní podpora',
-      'Pokročilé reporty',
-      'Individuální konzultace',
-      'Vlastní nastavení',
+      '2–4 hodiny nahrávání',
+      'Základní mix',
+      '2 revize mixu',
+      'Mastering 1 skladby',
+      'Soubory WAV + MP3 320kbps',
     ],
     featured: true,
-    cta: { label: 'Vybrat Pro', className: btnPrimary, href: '/contact' },
+    cta: { label: 'Rezervovat', className: btnPrimary, href: '/contact' },
   },
   {
     badge: 'Premium',
-    title: 'Balíček Enterprise',
+    title: 'Album / EP',
     price: 'na dotaz',
-    unit: 'Individuální řešení',
+    unit: 'Kompletní produkce',
     features: [
-      'Kompletní správa',
-      'Osobní konzultant',
-      'Neomezená podpora',
-      'Strategické plánování',
-      'Přednostní odbavení',
-      'Exkluzivní výhody',
+      'Neomezené nahrávání',
+      'Profesionální mix všech skladeb',
+      'Mastering celého alba',
+      'Příprava pro CD & streaming',
+      'Konzultace produkce',
+      'Archivace surových stop',
     ],
     featured: false,
-    cta: { label: 'Poptat Enterprise', className: btnOutline, href: '/contact' },
+    cta: { label: 'Nezávazná poptávka', className: btnOutline, href: '/contact' },
   },
 ];
 
@@ -136,10 +136,10 @@ export default function SluzbyPage() {
   return (
     <>
       <Head>
-        <title>Služby & Ceník – Název Firmy</title>
+        <title>Služby & Ceník – Accent Recording Studio</title>
         <meta
           name="description"
-          content="Přehled služeb a ceník naší firmy. Nabízíme komplexní řešení pro vaše potřeby."
+          content="Přehled služeb a ceník nahrávacího studia Accent Plzeň. Nahrávání, mastering, dabing, karaoke."
         />
       </Head>
 
@@ -149,7 +149,7 @@ export default function SluzbyPage() {
             Služby & <span className="text-[#f0c040]">Ceník</span>
           </>
         }
-        description="Kompletní přehled našeho portfolia — od základního poradenství až po komplexní firemní řešení."
+        description="Kompletní přehled našeho portfolia — od nahrávání přes mastering až po karaoke produkci."
       />
 
       {/* Detailní přehled služeb */}
@@ -157,9 +157,9 @@ export default function SluzbyPage() {
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <FadeUp className="mb-10">
             <span className="mb-4 inline-block rounded-full border border-[rgba(212,160,23,0.35)] bg-[rgba(212,160,23,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#f0c040] uppercase">
-              Portfolio
+              Nabídka
             </span>
-            <h2 className="h2-section mb-2 text-white">Co pro vás zajistíme</h2>
+            <h2 className="h2-section mb-2 text-white">Co pro vás uděláme</h2>
             <span className="mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#d4a017] to-[#f0c040]" />
           </FadeUp>
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -199,11 +199,11 @@ export default function SluzbyPage() {
             <span className="mb-4 inline-block rounded-full border border-[rgba(212,160,23,0.35)] bg-[rgba(212,160,23,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#f0c040] uppercase">
               Ceník
             </span>
-            <h2 className="h2-section mb-2 text-white">Průhledná cenová politika</h2>
+            <h2 className="h2-section mb-2 text-white">Transparentní ceny</h2>
             <span className="mx-auto mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#d4a017] to-[#f0c040]" />
             <p className="mx-auto mt-4 max-w-[56ch] text-[#8888a0]">
-              Zvolte si balíček, který nejlépe odpovídá vašim požadavkům. Uvedené ceny jsou
-              orientační základy.
+              Vyberte si variantu, která nejlépe odpovídá vašemu projektu. Všechny ceny jsou bez
+              DPH.
             </p>
           </FadeUp>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
@@ -221,7 +221,7 @@ export default function SluzbyPage() {
                 >
                   {featured && (
                     <div className="absolute -top-px left-1/2 -translate-x-1/2 rounded-b-lg bg-gradient-to-r from-[#a07810] to-[#d4a017] px-4 py-1 text-[0.7rem] font-bold tracking-widest text-black uppercase">
-                      Doporučené
+                      Nejoblíbenější
                     </div>
                   )}
                   <span className="mb-4 inline-block rounded-full border border-[rgba(212,160,23,0.35)] bg-[rgba(212,160,23,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#f0c040] uppercase">
@@ -253,9 +253,10 @@ export default function SluzbyPage() {
           </div>
           <FadeUp>
             <div className="mt-10 rounded-xl border border-[rgba(212,160,23,0.2)] bg-[rgba(212,160,23,0.07)] p-6 text-sm leading-relaxed text-[#8888a0]">
-              <strong className="text-[#f0c040]">⚠ Poznámka:</strong> Konečná kalkulace bude
-              připravena po úvodní konzultaci a specifikaci všech parametrů projektu. Ozvěte se nám
-              pro vypracování nabídky přímo na míru vašim záměrům.
+              <strong className="text-[#f0c040]">⚠ Poznámka:</strong> Přesné ceny závisí na
+              rozsahu, složitosti a době trvání projektu. Kontaktujte nás pro nezávaznou cenovou
+              nabídku přesně na míru vašim potřebám. Při dlouhodobé spolupráci nebo větším objemu
+              prací nabízíme množstevní slevy.
             </div>
           </FadeUp>
         </div>
@@ -265,9 +266,9 @@ export default function SluzbyPage() {
       <section className="w-full py-24">
         <div className="mx-auto w-[90vw] max-w-[650px] text-center">
           <FadeUp>
-            <h2 className="h2-section mb-3 text-white">Chcete začít spolupracovat?</h2>
+            <h2 className="h2-section mb-3 text-white">Máte zájem? Ozvěte se!</h2>
             <p className="mb-8 text-[#8888a0]">
-              Rádi s vámi probereme vaše plány a navrhneme optimální řešení.
+              Rádi vám připravíme cenovou nabídku přesně dle vašich potřeb a rozpočtu.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
@@ -277,10 +278,10 @@ export default function SluzbyPage() {
                 📧 Napsat nám
               </Link>
               <a
-                href="tel:+420000000000"
+                href="tel:+420603332100"
                 className="inline-flex items-center gap-2 rounded border border-white/10 px-7 py-3 text-sm font-semibold text-[#e8e8f0] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#d4a017] hover:text-[#f0c040]"
               >
-                📞 +420 000 000 000
+                📞 +420 603 332 100
               </a>
             </div>
           </FadeUp>

@@ -4,9 +4,10 @@ import { useEffect, useState } from 'react';
 
 const navLinks = [
   { href: '/', label: 'Úvod' },
-  { href: '/about', label: 'O nás' },
+  { href: '/studio', label: 'Studio' },
   { href: '/sluzby', label: 'Služby' },
   { href: '/reference', label: 'Reference' },
+  { href: '/karaoke', label: 'Karaoke' },
 ];
 
 export default function Navbar() {
@@ -37,10 +38,10 @@ export default function Navbar() {
           className="flex flex-col gap-0 leading-none"
         >
           <span className="font-outfit text-xl font-extrabold tracking-wide text-white">
-            Název Firmy
+            Accent
           </span>
           <span className="text-[0.7rem] tracking-[0.18em] text-[#d4a017] uppercase">
-            Podtitul nebo Obor
+            Recording Studio
           </span>
         </Link>
 
